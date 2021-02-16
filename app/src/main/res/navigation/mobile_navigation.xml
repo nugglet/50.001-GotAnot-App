@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@id/nav_home">
+
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="com.isp.uitest.MainActivity"
+        android:label="@string/menu_home"
+        tools:layout="@layout/activity_main" />
+
+    <fragment
+        android:id="@+id/staffItem_button"
+        android:name="com.isp.uitest.StaffItemPage"
+        android:label="Staff Item"
+        tools:layout="@layout/activity_staff_item_page" />
+
+    <fragment
+        android:id="@+id/nav_profile"
+        android:name="com.isp.uitest.ProfileActivity"
+        android:label="Profile Page"
+        tools:layout="@layout/profile" />
+
+    <fragment
+        android:id="@+id/nav_history"
+        android:name="com.isp.uitest.OrderHistory"
+        tools:layout="@layout/activity_order_history" />
+
+    <fragment
+        android:name="com.isp.uitest.SearchActivity"
+        tools:layout="@layout/activity_search"
+        android:id="@+id/search_test"/>
+    <fragment
+        android:name="com.isp.uitest.BookingActivity"
+        tools:layout="@layout/activity_booking_item"
+        android:id="@+id/booking_item"/>
+    <fragment
+        android:id="@+id/add_resource"
+        tools:layout="@layout/add_resource_activity"
+        android:name="com.isp.uitest.AddResourceActivity"/>
+
+
+</navigation>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@drawable/bg_light"
+    android:foreground="@drawable/crt_overlay"
+    tools:context=".SearchActivity">
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/history_tabs"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/TabLayoutDesign"
+        app:tabMaxWidth="0dp"
+        app:tabGravity="fill"
+        >
+        <com.google.android.material.tabs.TabItem
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/order_tab"
+            android:text="Orders"/>
+
+        <com.google.android.material.tabs.TabItem
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/log_tab"
+            android:text="Logs"/>
+    </com.google.android.material.tabs.TabLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycleViewOrder"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+</LinearLayout>

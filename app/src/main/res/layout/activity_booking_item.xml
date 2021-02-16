@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:foreground="@drawable/crt_overlay"
+    android:background="@color/colorPrimaryDark"
+    tools:context=".MainActivity">
+
+
+    <LinearLayout
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColorHint="@color/lightColour"
+        android:layout_centerHorizontal="true"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:textColor="@color/colorPrimary"
+            android:fontFamily="@font/rodin_regular"
+            android:text = "Collection"/>
+        <DatePicker
+            android:id="@+id/time_collect"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:theme="@style/MyDatePicker"
+            android:datePickerMode="spinner"
+            android:scaleX="0.8"
+            android:scaleY="0.8"
+            android:calendarViewShown="false"/>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColorHint="@color/lightColour"
+        android:layout_marginTop="150dp"
+        android:layout_centerHorizontal="true"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:textColor="@color/colorPrimary"
+            android:fontFamily="@font/rodin_regular"
+            android:text = "Return"/>
+        <DatePicker
+            android:id="@+id/time_return"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:scaleX="0.8"
+            android:scaleY="0.8"
+            android:datePickerMode="spinner"
+            android:theme="@style/MyDatePicker"
+            android:calendarViewShown="false"/>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:orientation="horizontal"
+        android:layout_marginTop="340dp"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:textColor="@color/colorPrimary"
+            android:fontFamily="@font/rodin_regular"
+            android:text = "Quantity: "/>
+
+        <EditText
+            android:id="@+id/amt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="hello"
+            android:textColor="@color/colorAccent"
+            android:inputType="number"
+            android:textColorHint="@color/midtone2"
+
+            />
+</LinearLayout>
+
+    <Button
+        android:id="@+id/order_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="400dp"
+        android:background="@color/midtone"
+        android:fontFamily="@font/rodin_regular"
+        android:layout_centerHorizontal="true"
+        android:text="Order Now!" />
+
+</RelativeLayout>

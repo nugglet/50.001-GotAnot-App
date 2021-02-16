@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="MyDatePicker" parent="android:Widget.Material.Light.DatePicker">
+        <item name="colorControlNormal">@color/colorPrimary</item>
+        <item name="colorControlActivated">@color/colorPrimary</item>
+        <item name="android:textColorPrimary">@color/colorPrimary</item>
+    </style>
+    <style name="TabLayoutDesign" parent="Widget.Design.TabLayout">
+        <item name="tabBackground">@color/colorPrimary</item>
+        <item name="tabIndicatorHeight">6dp</item>
+
+    </style>
+</resources>
